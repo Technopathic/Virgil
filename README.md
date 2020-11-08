@@ -12,11 +12,11 @@ Virgil is an online editor designed to give your content creation a more seamles
 ## Installation
 You can install Virgil into your React or NextJS project by doing the following:
 ```
-npm install virgil --save
+npm install virgil-editor --save
 ```
 
 ```
-yarn add virgil
+yarn add virgil-editor
 ```
 
 
@@ -24,7 +24,7 @@ yarn add virgil
 If your building a ReactJS project, importing the component in the traditional way or asynchronous is fine. For example:
 
 ```
-import Virgil from 'virgil'
+import Virgil from 'virgil-editor'
 ```
 
 If you're building a NextJS project, then you will have to import Virgil asynchronous with SSR disabled
@@ -38,7 +38,7 @@ You can render the Virgil editor using the code below. With Virgil, you need to 
 
 ```
 import React, { useState } from 'react'
-import Virgil from 'virgil'
+import Virgil from 'virgil-editor'
 
 const App = () => {
   const [ initial ] = useState({"blocks":[],"entityMap":{}})

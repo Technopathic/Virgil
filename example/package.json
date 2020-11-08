@@ -15,7 +15,7 @@
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
     "react-syntax-highlighter": "^15.3.0",
-    "virgil": "link:.."
+    "virgil-editor": "link:.."
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

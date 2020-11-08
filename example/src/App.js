@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import Proxima, { H1, H2, Bold, Main, Section, Column, Divider, P, Pre, Table, A, Button } from 'proxima-ui'
-import Virgil from 'virgil'
+import Virgil from 'virgil-editor'
 
 import Code from './components/Code'
 
@@ -67,8 +67,8 @@ const App = () => {
           <Column margin="16px 0px">
             <H2>Installation</H2>
             <Divider />
-            <Pre background="rgb(46, 52, 64)" color="rgb(216, 222, 233)">npm install virgil --save</Pre>
-            <Pre background="rgb(46, 52, 64)" color="rgb(216, 222, 233)">yarn add virgil</Pre>
+            <Pre background="rgb(46, 52, 64)" color="rgb(216, 222, 233)">npm install virgil-editor --save</Pre>
+            <Pre background="rgb(46, 52, 64)" color="rgb(216, 222, 233)">yarn add virgil-editor</Pre>
           </Column>
 
           <Column margin="16px 0px">
@@ -78,7 +78,7 @@ const App = () => {
               If your building a ReactJS project, importing the component in the traditional way or asynchronous is fine. For example:
             </P>
             <Code data={`
-import Virgil from 'virgil'
+import Virgil from 'virgil-editor'
             `}/>
             <P>
               If you're building a NextJS project, then you will have to import Virgil asynchronous with SSR disabled
@@ -96,7 +96,7 @@ const Virgil = dynamic(() => import('./components/editor'), { ssr: false })
             <P>You can render the Virgil editor using the code below. With Virgil, you need to set an editor object as a ref. Although it's not required, you can also set a content prop, if you are loading in contentBlock data. We also recommend setting the startFocus prop to true as well, which will set the editor to focus as soon as it loads into view.</P>
             <Code data={`
 import React, { useState } from 'react'
-import Virgil from 'virgil'
+import Virgil from 'virgil-editor'
 
 const App = () => {
   const [ initial ] = useState({"blocks":[],"entityMap":{}})
