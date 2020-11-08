@@ -102,12 +102,6 @@ const Menu = (props) => {
 
   }
 
-  const _clickBlockInlineStyle = (ev, style) => {
-    let k = Object.keys(style)[0]
-    props.onChange(props.style[k].toggle(props.editorState, style[k]))
-    setVirgilMenu(false) 
-  }
-
   const _enableLinkMode = (ev) => {
     ev.preventDefault()
     setVirgilMenu(false)
@@ -154,51 +148,6 @@ const Menu = (props) => {
 
       return _disableLinkMode(e)
     }
-  }
-
-  const inlineItems = () => {
-    return props.widget_options.block_types.filter(o => {
-      return o.type === "inline"
-    })
-  }
-
-  const blockItems = () => {
-    return props.widget_options.block_types.filter(o => {
-      return o.type === "block"
-    })
-  }
-
-  const getDefaultValue = () => {
-    if (menuInput) {
-      menuInput.current.value = ""
-    }
-
-    let currentBlock = getCurrentBlock(props.editorState)
-    let selection = props.editor.state.editorState.getSelection()
-    let contentState = props.editorState.getCurrentContent()
-    let selectedEntity = null
-    let defaultUrl = null
-    return currentBlock.findEntityRanges(character => {
-      let entityKey = character.getEntity()
-      selectedEntity = entityKey
-      return entityKey !== null && contentState.getEntity(entityKey).getType() === 'LINK'
-    }, (start, end) => {
-      let selStart = selection.getAnchorOffset()
-      let selEnd = selection.getFocusOffset()
-      if (selection.getIsBackward()) {
-        selStart = selection.getFocusOffset()
-        selEnd = selection.getAnchorOffset()
-      }
-
-      if (start === selStart && end === selEnd) {
-        defaultUrl = contentState.getEntity(selectedEntity).getData().url
-        return menuInput.current.value = defaultUrl
-      }
-    })
-  }
-
-  const linkBlock = () => {
-    return props.widget_options.block_types.find((o) => o.type === "link")
   }
 
   return (
