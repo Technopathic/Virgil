@@ -10,9 +10,11 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
+    "proxima-ui": "1.0.19",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
+    "react-syntax-highlighter": "^15.3.0",
     "virgil": "link:.."
   },
   "devDependencies": {
