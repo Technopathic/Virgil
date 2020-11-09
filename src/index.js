@@ -692,7 +692,7 @@ class Virgil extends React.PureComponent {
               ref={this.editor}
             />
           </Section>
-          <Divider color="#CCCCCC" />
+          {!this.props.readOnly ? <Divider color="#CCCCCC" /> : null }
           <Section>
             {
               !this.props.readOnly ? 
