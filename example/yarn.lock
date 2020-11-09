@@ -8703,17 +8703,6 @@ property-information@^5.0.0:
   dependencies:
     xtend "^4.0.0"
 
-proxima-ui@1.0.18:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/proxima-ui/-/proxima-ui-1.0.18.tgz#08dc19fedcbb6571bcb9680391dc08d5a08236ea"
-  integrity sha512-ULljuT04e32FMhebxa9XRqMrimLGmtVoZEIJ+Mzee1j6PniyxWBl6cVH3ZL/vf67/2QR4USHtrW+KR30x57OyQ==
-  dependencies:
-    "@emotion/core" "^10.0.35"
-    "@emotion/styled" "^10.0.27"
-    axios "^0.21.0"
-    emotion "^10.0.27"
-    emotion-theming "^10.0.27"
-
 proxima-ui@1.0.19:
   version "1.0.19"
   resolved "https://registry.yarnpkg.com/proxima-ui/-/proxima-ui-1.0.19.tgz#4fce2f790d5db9d3d9b57d08b620ffcecb8516a7"
@@ -10616,7 +10605,7 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-"virgil@link:..":
+"virgil-editor@link:..":
   version "0.0.0"
   uid ""
 
