@@ -667,7 +667,7 @@ class Virgil extends React.PureComponent {
             position="relative" 
             height="100%" 
             zIndex="1" 
-            css={css` figure { margin:0; padding:0; } > div { height: 100%; cursor: text; overflow-y:auto }`}
+            css={css` figure { margin:0; padding:0; } > div { height: 100%; cursor: text; overflow:${this.props.overflow ? this.props.overflow : 'auto'} }`}
             onClick={this.focusEditor}
           >
             <Editor
