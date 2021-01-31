@@ -30,7 +30,7 @@ import Virgil from 'virgil-editor'
 If you're building a NextJS project, then you will have to import Virgil asynchronous with SSR disabled
 ```
 import dynamic from 'next/dynamic'
-const Virgil = dynamic(() => import('./components/editor'), { ssr: false })
+const Virgil = dynamic(() => import('virgil-editor'), { ssr: false })
 ```
 
 ## Render
