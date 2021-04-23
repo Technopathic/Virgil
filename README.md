@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="800" height="250" src="https://storage.googleapis.com/virgil-f3dca.appspot.com/githubVirgil.png">
+  <img width="800" height="250" src="https://technopathic.github.io/Virgil/social-virgil.png">
 </p>
 
 # Virgil - WYSIWYG Editor 
