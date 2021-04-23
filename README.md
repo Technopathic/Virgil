@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="800" height="250" src="https://technopathic.github.io/Virgil/social-virgil.png">
+  <img width="800" height="250" src="https://technopathic.github.io/Virgil/githubVirgil.png">
 </p>
 
 # Virgil - WYSIWYG Editor 
